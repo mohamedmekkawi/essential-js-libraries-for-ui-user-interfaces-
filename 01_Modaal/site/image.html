@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Modaal</title>
+        <link rel="stylesheet" href="css/modaal.min.css">
+    </head>
+    <body>
+        <h1 class="text-center">Modaal</h1>
+
+        <a href="images/nature-12.jpg" class="image">Open Image</a>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/modaal.min.js"></script>
+        <script>
+            $(function() {
+                $('.image').modaal({
+                    type: 'image'
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Modaal</title>
+        <link rel="stylesheet" href="css/modaal.min.css">
+    </head>
+    <body>
+        <h1 class="text-center">Modaal</h1>
+
+        <a href="images/nature-12.jpg" class="image" data-group="nature"><img src="images/nature-12-thumb.jpg" /></a>
+        <a href="images/nature-7.jpg" class="image" data-group="nature"><img src="images/nature-7-thumb.jpg" /></a>
+        <a href="images/nature-9.jpg" class="image" data-group="nature"><img src="images/nature-9-thumb.jpg" /></a>
+        <a href="images/nature-2.jpg" class="image" data-group="nature"><img src="images/nature-2-thumb.jpg" /></a>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/modaal.min.js"></script>
+        <script>
+            $(function() {
+                $('.image').modaal({
+                    type: 'image'
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Modaal</title>
+        <link rel="stylesheet" href="css/modaal.min.css">
+    </head>
+    <body>
+        <h1 class="text-center">Modaal</h1>
+
+        <!-- <a href="#myModal" class="modal-trigger">Open Modal</a> -->
+        <button class="modal-trigger">Show Modal</button>
+
+        <div id="myModal" style="display: none;">
+            <h3>Modal Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, expedita! Nostrum nulla ullam pariatur accusamus, tempore enim animi consectetur, inventore asperiores odit repellat incidunt eius cumque sit adipisci consequatur natus.</p>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/modaal.min.js"></script>
+        <script>
+            $(function() {
+                //$('.modal-trigger').modaal();
+                $('.modal-trigger').modaal({
+                    content_source: '#myModal'
+                });
+            });
+        </script>
+    </body>
+</html>
